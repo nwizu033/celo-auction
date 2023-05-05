@@ -54,9 +54,9 @@ export default function Actions() {
         if(signer){
             const contract = new ethers.Contract(contractAddress, abi, signer);
             const withdrawal = await contract.withdrawBid(id);
-            alert('Mining in progress, please wait');
+            alert("Mining in progress, please wait");
             await withdrawal.wait();
-            alert('Done! Best of luck next time')
+            alert("Done! Best of luck next time")
     
         } else{
             alert("Please connect wallet to withdraw bid");
@@ -73,9 +73,9 @@ export default function Actions() {
      
                 const contract = new ethers.Contract(contractAddress, abi, signer);
                 const withdrawal = await contract.withdrawAuctionProceed(id);
-                alert('Mining in progress, please wait');
+                alert("Mining in progress, please wait");
                 await withdrawal.wait();
-                alert('Done! Congratulation!!!');
+                alert("Done! Congratulation!!!");
         
             } else{
                 alert("Please connect wallet to withdraw proceed");
@@ -156,7 +156,7 @@ export default function Actions() {
                         <button onClick={bid} className=' block border-white border-2 w-full mx-[8%] py-2 text-center mt-3 font-bold text-xl mb-10'>Bid</button>
                       </div>
 
-                      <p className=' text-center italic'>Bid your best. You can't bid lesser than current bid</p>
+                      <p className=' text-center italic'>Bid your best. You cannot bid lesser than current bid</p>
             
                     </div>
 

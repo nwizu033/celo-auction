@@ -12,7 +12,7 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className=" leading-6 text-lg">We provide you the opportunity to raise an auction to sell those items you've <br/>
+            <p className=" leading-6 text-lg">We provide you the opportunity to raise an auction to sell those items you have <br/>
             always wanted the world to see and appreciate. Our numerous users are happy<br/>
              and eager to bid for them. <span className=" font-bold">[Bid with $cUSD and earn $NwizuGold worth of the item]</span>
             </p>
